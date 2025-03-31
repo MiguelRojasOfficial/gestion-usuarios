@@ -1,3 +1,77 @@
+# 🛠️ Sistema de Gestión de Usuarios
+
+Este es un sistema de gestión de usuarios desarrollado con **Laravel, Blade y Bootstrap**. Incluye autenticación, roles y permisos sin usar paquetes externos, además de funciones como exportación de datos, estadísticas y notificaciones.
+
+## 🚀 Características
+- **Registro e inicio de sesión**
+- **Roles y permisos** (Administrador y Editor)
+- **Gestión de usuarios** (CRUD)
+- **Asignación de roles desde el panel de administración**
+- **Exportación de datos a PDF y Excel**
+- **Notificaciones de edición y publicación de artículos**
+- **Búsqueda y filtrado avanzado de artículos**
+
+## 📌 Instalación
+### 1️⃣ Clonar el repositorio
+```bash
+git clone https://github.com/tuusuario/gestion-usuarios.git
+cd gestion-usuarios
+```
+
+### 2️⃣ Instalar dependencias
+```bash
+composer install
+npm install
+```
+
+### 3️⃣ Configurar variables de entorno
+Crea un archivo `.env` basado en `.env.example` y configura la base de datos:
+```bash
+cp .env.example .env
+```
+Edita `.env` y cambia estos valores según tu configuración:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=gestion_usuarios
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4️⃣ Generar clave de aplicación
+```bash
+php artisan key:generate
+```
+
+### 5️⃣ Migrar base de datos y poblarla con datos de prueba
+```bash
+php artisan migrate --seed
+```
+
+### 6️⃣ Ejecutar el servidor
+```bash
+php artisan serve
+```
+
+## 🔑 Accesos predeterminados
+| Rol            | Email                 | Contraseña |
+|---------------|----------------------|------------|
+| Administrador | admin@example.com     | admin      |
+| Editor        | editor@example.com    | editor     |
+
+## 📂 Exportación de Datos
+- **Excel:** `editor/articles/export/excel`
+- **PDF:** `editor/articles/export/pdf`
+
+## 📬 Notificaciones
+Los editores reciben una notificación cuando su artículo es publicado o editado.
+
+## 📝 Licencia
+Este proyecto está bajo la licencia **MIT**.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

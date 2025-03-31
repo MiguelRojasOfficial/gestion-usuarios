@@ -1,0 +1,25 @@
+.mw-400 {
+    max-width: 400px;
+}
+
+.m-w {
+    max-width: 320;
+}
+
+.input-underline {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #6c757d;
+    box-shadow: none;
+    color: #333;
+    padding: 5px 0;
+    outline: none;
+    width: 100px;
+}
+
+.no-autofill {
+    background-color: white !important;
+}
+.no-autofill:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+}

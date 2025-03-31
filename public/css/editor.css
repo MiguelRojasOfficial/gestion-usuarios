@@ -1,0 +1,32 @@
+.btn-filter {
+    transition: all 0.3s ease;
+    background-color: #007bff;
+    border: none;
+    padding: 8px 16px;
+}
+
+.btn-filter:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.form-control, .form-select {
+    min-width: 180px;
+}
+
+.col-acciones {
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .form-control, .form-select, .btn-filter {
+        flex: 1;
+    }
+}

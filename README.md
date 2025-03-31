@@ -1,8 +1,8 @@
-# 🛠️ Sistema de Gestión de Usuarios
+# Sistema de Gestión de Usuarios
 
 Este es un sistema de gestión de usuarios desarrollado con **Laravel, Blade y Bootstrap**. Incluye autenticación, roles y permisos sin usar paquetes externos, además de funciones como exportación de datos, estadísticas y notificaciones.
 
-## 🚀 Características
+## Características
 - **Registro e inicio de sesión**
 - **Roles y permisos** (Administrador y Editor)
 - **Gestión de usuarios** (CRUD)
@@ -11,20 +11,20 @@ Este es un sistema de gestión de usuarios desarrollado con **Laravel, Blade y B
 - **Notificaciones de edición y publicación de artículos**
 - **Búsqueda y filtrado avanzado de artículos**
 
-## 📌 Instalación
-### 1️⃣ Clonar el repositorio
+## Instalación
+### Clonar el repositorio
 ```bash
 git clone https://github.com/tuusuario/gestion-usuarios.git
 cd gestion-usuarios
 ```
 
-### 2️⃣ Instalar dependencias
+### Instalar dependencias
 ```bash
 composer install
 npm install
 ```
 
-### 3️⃣ Configurar variables de entorno
+### Configurar variables de entorno
 Crea un archivo `.env` basado en `.env.example` y configura la base de datos:
 ```bash
 cp .env.example .env
@@ -39,17 +39,17 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 4️⃣ Generar clave de aplicación
+### Generar clave de aplicación
 ```bash
 php artisan key:generate
 ```
 
-### 5️⃣ Migrar base de datos y poblarla con datos de prueba
+### Migrar base de datos y poblarla con datos de prueba
 ```bash
 php artisan migrate --seed
 ```
 
-### 6️⃣ Ejecutar el servidor
+### Ejecutar el servidor
 ```bash
 php artisan serve
 ```

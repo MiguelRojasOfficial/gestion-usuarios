@@ -54,20 +54,20 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-## 🔑 Accesos predeterminados
+## Accesos predeterminados
 | Rol            | Email                 | Contraseña |
 |---------------|----------------------|------------|
 | Administrador | admin@example.com     | admin      |
 | Editor        | editor@example.com    | editor     |
 
-## 📂 Exportación de Datos
+## Exportación de Datos
 - **Excel:** `editor/articles/export/excel`
 - **PDF:** `editor/articles/export/pdf`
 
-## 📬 Notificaciones
+## Notificaciones
 Los editores reciben una notificación cuando su artículo es publicado o editado.
 
-## 📝 Licencia
+## Licencia
 Este proyecto está bajo la licencia **MIT**.
 
 
